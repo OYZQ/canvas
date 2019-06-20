@@ -50,6 +50,8 @@ cancel.onclick = function () {
 
 #### 2. 保存下载
 
+将画板图案用toDataURL属性产生URL，在body创建a元素设置其href和download属性，并点击a元素开始下载
+
 ##### 主要属性
 
 1. toDataURL
