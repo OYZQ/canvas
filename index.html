@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>canvas</title>
+    <title>在线涂鸦画板</title>
     <link rel="stylesheet" href="./index.css">
 </head>
 
@@ -19,13 +19,52 @@
             <use xlink:href="#icon-Eraser-Tool"></use>
         </svg>
     </div>
-    <ol class="colors">
-        <li id="red" class="red active"></li>
-        <li id="green" class="green"></li>
-        <li id="blue" class="blue"></li>
-    </ol>
+    <div class="tools">
+        <ol class="colors">
+            <li id="black" class="black active"></li>
+            <li id="red" class="red"></li>
+            <li id="green" class="green"></li>
+            <li id="blue" class="blue"></li>
+            <li id="yellow" class="yellow"></li>
+            <li id="skyblue" class="skyblue"></li>
+            <li id="pink" class="pink"></li>
+            <li id="white" class="white"></li>
+        </ol>
+        <div class="sizes">
+            <div id="one" class="one active wai">
+                <div class="one"></div>
+            </div>
+            <div id="two" class="two wai">
+                <div class="two"></div>
+            </div>
+            <div id="three" class="three wai">
+                <div class="three"></div>
+            </div>
+            <div id="four" class="four wai">
+                <div class="four"></div>
+            </div>
+            <div id="five" class="five wai">
+                <div class="five"></div>
+            </div>
+            <div id="six" class="six wai">
+                <div class="six"></div>
+            </div>
+            <div id="seven" class="seven wai">
+                <div class="seven"></div>
+            </div>
+        </div>
+        <div class="btn">
+            <input type="button" value="清 空" class="button clear" id="clear">
+        </div>
+        <div class="btn">
+            <input type="button" value="撤 销" class="button cancel" id="cancel">
+        </div>
+        <div class="btn">
+            <input type="button" value="保 存" class="button save" id="save">
+        </div>
+    </div>
     <script src="./index.js"></script>
-    <script src="//at.alicdn.com/t/font_1250644_ovmmcc86q2l.js"></script>
+    <script src="//at.alicdn.com/t/font_1250644_f74kk8r5e5.js"></script>
 </body>
 
 </html>

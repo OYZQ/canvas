@@ -14,82 +14,169 @@ ol {
     vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 #xxx {
     background: #fff;
     display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 body {
     margin: 0px;
+    overflow: hidden;
 }
 
-html {}
 
-.actions {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px;
-}
-
-.actions svg {
-    width: 1.5em;
-    height: 1.5em;
-    margin: 0 10px;
-}
-
-/* .actions>#brush {
-    display: none;
-} */
-
-.actions>#eraser {
+.tools {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: solid 1px #aaa;
+    background-color: #eee;
     border-radius: 5px;
+    padding-right: 5px;
 }
 
-/* .actions.x>#brush {
-    display: inline-block;
+.tools .btn .clear{
+    background-color: #E6623C;
 }
 
-.actions.x>#eraser {
-    display: none
-} */
-
-.active {
-    fill: red;
-    transform: scale(1.2);
-    transform: all 0.3s;
+.tools .btn .save {
+    background-color: #5f90b0;
 }
 
+.tools .btn .cancel{
+    background-color: #ccc;
+}
 .colors {
-    position: fixed;
-    top: 60px;
-    left: 28px;
+    float: left;
+    margin: 5px;
+    width: 30px;
     padding: 0;
 }
 
 .colors>li {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    box-shadow: 0 0 3px rgba(0,0,0,0.25);
     margin: 10px 0;
+    transfrom: all 0.3s;
+    width: 24px;
+    height: 24px;
+    border: solid 2px #aaa;
+    opacity: 0.5;
+
 }
-.colors>li.red{
+
+.colors>li.black {
+    background: black;
+}
+
+.colors>li.red {
     background: red;
 }
 
-.colors>li.green{
+.colors>li.green {
     background: green;
 }
 
-.colors>li.blue{
+.colors>li.blue {
     background: blue;
 }
 
-.colors> li.active{
-    box-shadow: 0 0 3px rgba(0,0,0,0.95);
-    transform:scale(1.2);
+.colors>li.yellow {
+    background: yellow;
+}
+
+.colors>li.skyblue {
+    background: skyblue;
+}
+
+.colors>li.pink {
+    background: pink;
+}
+
+.colors>li.white {
+    background: white;
+}
+
+.colors>li.active {
+    opacity: 1;
+    border: solid 2px #000;
+}
+
+.sizes {
+    float: right;
+    margin-top: 14px;
+    margin-right: 5ox;
+    width: 30px;
+    margin-left: 0;
+}
+
+
+.sizes>.wai {
     transfrom: all 0.3s;
+    width: 30px;
+    height: 30px;
+    border: solid 2px #aaa;
+    margin-bottom: 9px;
+    opacity: 0.5;
+}
+
+.sizes .active {
+    opacity: 1;
+    border: solid 2px #000;
+}
+
+.sizes>.wai>div {
+    height: 24px;
+    background: #000;
+    margin: 3px auto;
+}
+
+.sizes>.wai .one {
+    width: 3px;
+}
+
+.sizes>.wai .two {
+    width: 6px;
+}
+
+.sizes>.wai .three {
+    width: 9px;
+}
+
+.sizes>.wai .four {
+    width: 12px;
+}
+
+.sizes>.wai .five {
+    width: 15px;
+}
+
+.sizes>.wai .six {
+    width: 18px;
+}
+
+.sizes>.wai .seven {
+    width: 21px;
+}
+
+.btn{
+    clear: both;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.btn input{
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: .98em;
+    padding: 5px 10px;
+}
+.sizes{
+    margin-right: 5px;
 }
